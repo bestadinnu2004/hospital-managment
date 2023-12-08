@@ -83,7 +83,7 @@
         console.log(data);
         data.forEach(doctor => {
           let li = document.createElement("li");
-          li.innerHTML = `<a class="dropdown-item" href="#">${doctor.name}</a>`;
+          li.innerHTML = <a class="dropdown-item" href="#">${doctor.name}</a>;
           li.addEventListener("click", function () {
             document.getElementById("dropdownBtn").innerText = doctor.name;
           });
